@@ -2,18 +2,13 @@ html, body {
     height: 100%;
 }
 
-.my-container {
-    /* position: relative; */
-    height: 100%;
-}
-
 .opening {
+    z-index: 3;
     position: fixed;
     height: 100%;
     width: 100%;
     background-color: grey;
     top: 0px;
-    
     animation-name: opening;
     animation-duration: 150ms;
     animation-fill-mode: forwards;
@@ -48,8 +43,7 @@ html, body {
     background-color: white;
     opacity: 0;
     /* animation-name: capture-fx; */
-    animation-duration: 200ms;
-    /* animation-fill-mode: forwards; */
+    animation-duration: 100ms;
 }
 
 @keyframes capture-fx {
@@ -61,10 +55,41 @@ html, body {
     }
 }
 
-.menu {
-    width: 100px;
+.mainmenu-container {
+    position: relative;
+    /* background-color: yellow; */
+    height: 100%;
+}
+
+.menu{
+    position: absolute;
 }
 
 .materi {
-  background-color: yellow;  
+    top: 100px;
+    left: 0px;
+}
+
+.soal {
+    bottom: 0px;
+    left: 0px;
+}
+
+.simulasi {
+    bottom: 0px;
+    right: 0px;
+}
+
+.profil {
+    right: 0px;
+    top: 100px;
+}
+
+.label-menu {
+    background-color: yellow;
+    position: absolute;
+    top: -2.5rem;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
 }
