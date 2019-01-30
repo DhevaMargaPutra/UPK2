@@ -1,0 +1,70 @@
+html, body {
+    height: 100%;
+}
+
+.my-container {
+    /* position: relative; */
+    height: 100%;
+}
+
+.opening {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: grey;
+    top: 0px;
+    
+    animation-name: opening;
+    animation-duration: 150ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes opening {
+    0% {
+        display: initial;
+    }
+    100% {
+        display: none;
+    }
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+}
+
+.logo:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.capture-fx {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    opacity: 0;
+    /* animation-name: capture-fx; */
+    animation-duration: 200ms;
+    /* animation-fill-mode: forwards; */
+}
+
+@keyframes capture-fx {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.menu {
+    width: 100px;
+}
+
+.materi {
+  background-color: yellow;  
+}
