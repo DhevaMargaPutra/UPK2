@@ -9,9 +9,9 @@ html, body {
     width: 100%;
     background-color: grey;
     top: 0px;
-    animation-name: opening;
-    animation-duration: 150ms;
-    animation-fill-mode: forwards;
+    /* animation-name: opening;
+    animation-duration: 150ms; */
+    /* animation-fill-mode: forwards; */
 }
 
 @keyframes opening {
@@ -33,10 +33,6 @@ html, body {
     top: 0px;
 }
 
-.logo:hover {
-    transform: scale(1.1, 1.1);
-}
-
 .capture-fx {
     height: 100%;
     width: 100%;
@@ -44,6 +40,7 @@ html, body {
     opacity: 0;
     /* animation-name: capture-fx; */
     animation-duration: 100ms;
+    animation-fill-mode: forwards;
 }
 
 @keyframes capture-fx {
