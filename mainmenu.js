@@ -5,11 +5,10 @@ const openingDOM = document.getElementById('opening');
 // const simulasiBtnDOM = document.getElementById('simulasi-button');
 // const profilBtnDOM = document.getElementById('profil-button');
 
-function playOnce(element, animation, callback) {
+function playAnimateOnce(element, animation, callback) {
     element.classList.add('animated', animation);
     
     function handleEndAnimation() {
-        console.log('c');
         element.classList.remove('animated', animation);
         element.removeEventListener('animationend', handleEndAnimation);
         
@@ -20,11 +19,26 @@ function playOnce(element, animation, callback) {
 }
 
 function playCaptureFx () {
-    playOnce(openingDOM, 'flash', function() {
+    playAnimateOnce(openingDOM, 'flash', function() {
         openingDOM.style.display = 'none';
     });
 }
 
+function showLabel(element) {
+    element.children[0].classList.remove('animated', 'fadeOut');
+    // element.children[0].style.opacity = 1;
+    element.children[0].classList.add('animated', 'bounceIn');
+}
+
+function hideLabel(element) {
+    element.children[0].classList.remove('animated', 'bounceIn');
+    // element.children[0].style.opacity = 0;
+    element.children[0].classList.add('animated', 'fadeOut');
+}
+
+function check() {
+    console.log('checklist');
+}
 // logoOpeningDOM.addEventListener('mousedown', function() {
 //     addAnimation('logo', 'bounceIn');
 // });

@@ -6,36 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
     <link rel="stylesheet" href="animate.css">
-    <link rel="stylesheet" type="text/css" href="custom.css">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="mainmenu.css">
+    <title>KFD</title>
 </head>
-<body>
+<body onload="check()">
     <!-- Opening -->
     <div id="opening" class="opening">
-        <div id="capture-fx" class="capture-fx"></div>
         <div id="logo-container" class="logo-container">
-            <a href="#" onclick="playOnce(this, 'bounceIn', playCaptureFx)"><img id="logo" src="apple.png" alt="materi"></a>
+            <a href="#" onclick="playAnimateOnce(this, 'bounceOut', playCaptureFx)"><img id="logo" src="images/camera-logo.png" alt="logo"></a>
         </div>
     </div>
 
     <!-- Button Menu -->
-    <div class="mainmenu-container">
-        <div id="materi-button" class="menu materi">
-            <a href="materi.html"><img width="100px" height="100px" src="apple.png" alt="materi"></a>
-            <div class="label-menu">Materi</div>
-        </div>
-        <div id="soal-button" class="menu soal">
-            <a href="#"><img width="100px" height="100px" src="apple.png" alt="soal"></a>
-            <div class="label-menu">Soal</div>
-        </div>
-        <div id="simulasi-button" class="menu simulasi">
-            <a href="#"><img width="100px" height="100px" src="apple.png" alt="simulasi"></a>
-            <div class="label-menu">Simulasi</div>
-        </div>
-        <div id="profil-button" class="menu profil">
-            <a href="#"><img width="100px" height="100px" src="apple.png" alt="profil"></a>
-            <div class="label-menu">Profil</div>
-        </div>
+    <div>
+        <img src="images/bg.png" alt="" class="desk" usemap="#desk-map">
+        <map name="desk-map"></map>
     </div>
 
     <script src="mainmenu.js"></script>
